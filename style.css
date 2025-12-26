@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    position: relative;
+    height: 592px;
+    width: 100%;
+    background-size: 100vw;
+    z-index: 10;
+    /* overflow: hidden; */
+}
+.main .bg{
+    background-image: url(./Assets/N-bg.jpg);
+    height: 592px;
+    background-size: cover;
+    position:relative;
+    z-index: 10;
+}
+.main .box {
+  height: 90vh;
+  width: 100%;
+  opacity: 0.544;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  height: 592px;
+}
+nav{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+nav .logo img{
+    position: relative;
+    width: 150px;
+    z-index: 10;
+    color: red;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    width: 76px;
+    height: 34.5px;
+    border: none;
+    border-radius: 0.35rem;
+    font-weight: bolder;
+    background-color: red;
+    color: white;
+}
+nav button:hover{
+    cursor: pointer;
+    background-color: rgb(217, 15, 15);
+}
+/* heroSection */
+.heroSection{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    position: relative;
+    z-index: 10;
+    color: white;
+}
+.heroSection div h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.heroSection span{
+    margin-top: -13.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.heroSection :nth-child(2){
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.heroSection .email{
+    display: flex;
+    margin-left: -40px;
+}
+.email .address input{
+    height: 56px;
+    width: 366.5px;
+    border: 0.1px solid white;
+    border-radius: 6px;
+    background-color: black;
+    color: #dddddd;
+    font-size: 1.2rem;
+    padding-left: 15.5px;
+}
+.email .get button{
+    height: 56px;
+    width: 213.5px;
+    background-color: red;
+    color: white;
+    font-size: 1.38rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.email .get button:hover{
+    cursor: pointer;
+    background-color: rgb(217, 15, 15);}
+/* products */
+.products{
+    background-color: black;
+}
+.products .trending{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+.products .films{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+background-size: cover;
+}
+.films img{
+    width: 230px;
+}
+/* reason-Section */
+.reason{
+    background-color: black;
+    color: white;
+}
+.reason .more-reason{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.reason-boxes{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 15px;
+}
+.reason-boxes .box1{
+    width: 280px;
+    height: 370px;
+    background: linear-gradient(to bottom,  #1c1c3c, #2a0d18);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    padding: 30px;
+}
+.box1 h2{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+.box1 p{
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.box1 i{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 3.6rem;
+    position: relative;
+    top: 45px;
+    color: rgb(185, 9, 185);
+}
+#icon1{
+    color: burlywood;
+}
+#icon3{
+    color: lightblue;
+}
+#icon4{
+    color: red;
+}
+/* Extra large screen */
+/* @media screen and (min-width: 1280px) {
+nedd nhi hai 
+} */
+/* @media screen and (max-width:1024px) {
+     .box1 i{
+        font-size: 2.5rem;
+     }
+} 
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    } 
+    .films{
+        flex-wrap: wrap;
+     }
+     .reason-boxes{
+        flex-wrap: wrap;
+     }
+     .reason-boxes.box1{
+        height: 20px;
+        width: 800px;
+     }
+} */
+ /* 1197 
+ tailwind: xl: min-width 1280px;
+tailwind: l: min-width 1024px;
+tailwind: md: min-width 768px;
+tailwind: sm: min-width 640px;
+
+ 
+ */
+
+ /* gpt */
+ /* For tablets */
+@media (max-width: 992px) {
+  nav {
+    width: 90%;
+  }
+
+  .heroSection div h1 {
+    font-size: 2.2rem;
+  }
+
+  .email {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .email .address input,
+  .email .get button {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .films {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .reason-boxes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .reason-boxes .box1 {
+    width: 80%;
+  }
+}
+
+/* For mobiles */
+@media (max-width: 600px) {
+  nav {
+
+    width: 70%;
+  }
+
+  nav .logo img {
+    width: 120px;
+  }
+
+  nav button {
+    width: 90px;
+    height: 32px;
+  }
+
+  .heroSection div h1 {
+    font-size: 1.7rem;
+  }
+
+  .heroSection :nth-child(2),
+  .heroSection :nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .films img {
+    width: 90%;
+  }
+
+  .box1 h2 {
+    font-size: 1.2rem;
+  }
+
+  .box1 p {
+    font-size: 0.95rem;
+  }
+
+  .box1 i {
+    font-size: 2.8rem;
+  }
+}
