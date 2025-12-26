@@ -16,7 +16,7 @@ audio {
     /* overflow: hidden; */
 }
 .main .bg{
-    background-image: url(./Assets/N-bg.jpg);
+    background-image: url(./N-bg.jpg);
     height: 592px;
     background-size: cover;
     position:relative;
